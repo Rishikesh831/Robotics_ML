@@ -25,3 +25,35 @@ The goal: **make it small enough to run on simple microprocessors (like Raspberr
 ├── requirements.txt      # Python dependencies
 ├── .gitignore
 └── README.md
+
+---
+
+## 🚀 Workflow Overview
+
+### 1. **Data Collection (Notebook 1: Gesture.ipynb)**
+- Used **Mediapipe** to capture **21 hand landmarks** (x, y) from webcam.
+- Built a dataset of gestures: `open_palm`, `fist`, `thumbs_up`.
+- Saved as a **CSV file** with shape `(n_samples, 42 features + label)`.
+
+### 2. **Model Training (Notebook 2: Model_Train.ipynb)**
+- Preprocessed features (landmark normalization).
+- Compared three ML models:
+  - Logistic Regression (baseline)
+  - Random Forest
+  - XGBoost (final choice)
+- Evaluated accuracy using train-test split.
+- Achieved **~94% accuracy** consistently across models.
+- Saved final trained model as `xgb_model.pkl` using `joblib`.
+
+### 3. **Deployment (Streamlit App)**
+- Built a real-time webcam app (`app.py`) using **Streamlit**.
+- Extracted landmarks per frame with Mediapipe.
+- Passed features to trained model (`xgb_model.pkl`).
+- Displayed predictions on live video feed with OpenCV overlay.
+- Added a **label map** so predictions show as:
+  - `open_palm`
+  - `thumbs_up`
+  - `fist`
+
+---
+
