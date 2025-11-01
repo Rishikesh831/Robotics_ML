@@ -56,4 +56,7 @@ The goal: **make it small enough to run on simple microprocessors (like Raspberr
   - `fist`
 
 ---
+<img width="895" height="637" alt="image" src="https://github.com/user-attachments/assets/4be69e54-5e7a-4bf6-8441-36462af0b729" />
+
+
 
