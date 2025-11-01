@@ -57,6 +57,7 @@ The goal: **make it small enough to run on simple microprocessors (like Raspberr
 
 ---
 <img width="895" height="637" alt="image" src="https://github.com/user-attachments/assets/4be69e54-5e7a-4bf6-8441-36462af0b729" />
+<img width="895" height="637" alt="image" src="https://github.com/user-attachments/assets/d894a6da-9713-4d34-b69b-4a6a901a1ff4" />
 
 
 
